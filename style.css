@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    font-family: 'poppins', sans-serif;
+    color: #333;
+    background: #f9f9f9;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: blue;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+}
+nav ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+   font-weight: bold;
+   text-transform: capitalize;
+}
+
+main{
+    padding: 2rem;
+}
+
+.intro img{
+   width: 530px;
+   position: absolute;
+   bottom: 0;
+   right: 10%;
+}
+
+.intro{
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.intro h1{
+    font-size: 50px;
+    color: black;
+      padding-left: 2%;
+    padding-right: 2%;
+    justify-items: center;
+     text-align: center;
+}
+
+.intro p{
+    margin: 10px 0;
+    font-size: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+button{
+      margin: 10px 0;
+    font-size: 30px;
+    color: white;
+    border-radius: 20px;
+    background-color: blue;
+    font-size: 30px;
+    box-shadow: 1px solid blue;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: white;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    border-radius: 500px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text h2{
+    color: red;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: black;
+    letter-spacing: 2px;
+    font-size: 22px;
+     margin-bottom: 25px;
+     text-transform: capitalize;
+}
+.about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+    cursor: pointer;
+}
+
+.contact{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 80%;
+    padding: 1rem;
+    font-size: 18px;
+    border-radius: 1.5rem;
+    border: 2px solid;
+    margin: 1rem 0;
+    resize: none;
+}
+
+.contact form .btn{
+    padding: 15px 40px;
+    font-size: 18px;
+    background-color: #f44336;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.contact form .btn:hover{
+    background-color: transparent;
+    border: 2px solid #f44336;
+}
